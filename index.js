@@ -9,7 +9,7 @@ require("./services/passport");
 const app = express();
 
 //connect to mongodb
-mongoose.connect(keys.mongodbURI);
+mongoose.connect(keys.mongoURI);
 
 //cookie for user authentication
 app.use(
