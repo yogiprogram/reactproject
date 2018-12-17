@@ -9,6 +9,7 @@ class SurveyList extends Component {
     }
 
     renderSurveys() {
+
         return this.props.surveys.reverse().map(survey => {
             return (
                 <div className="card  darken-2" key={survey._id}>
@@ -28,6 +29,7 @@ class SurveyList extends Component {
                 </div>
             );
         });
+
     }
 
     render() {
